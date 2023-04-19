@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+    <body>
+        <form action="/esercizio1" method = 'GET'>
+            inserisci il tuo nome: <br>
+            <input type = 'text' name = 'nome'><br>
+            inserisci il tuo cognome: <br>
+            <input type = 'text' name = 'cognome'><br><br>
+            <input type="submit" value='invia'>
+        </form>
+        <br>
+        {%for citta in lista%}
+            <a href = "/esercizio2/{{citta}}" ><p>{{citta}}</p></a>
+        {%endfor%}  
+        <br>  
+        <form action="/esercizio3" method = 'GET'>
+            <input type="submit" value='ESERCIZIO3'>
+        </form>
+        <br>  
+        <form action="/esercizio4" method = 'GET'>
+            <input type="submit" value='esercizio4'>
+        </form>
+        <br>  
+        <form action="/esercizio5" method = 'GET'>
+            <input type="submit" value='esercizio5'>
+        </form>
+        <br>  
+        <form action="/esercizio6" method = 'GET'>
+            <input type="submit" value='esercizio6'>
+        </form>
+        <br>  
+        <form action="/esercizio7" method = 'GET'>
+            inserisci il provider: <br>
+            <input type = 'text' name = 'provider'><br>
+            <input type="submit" value='esercizio7'>
+        </form>
+    </body>
+</html>
